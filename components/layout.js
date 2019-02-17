@@ -1,12 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const Layout = ({ children }) => (
   <React.Fragment>
-
     {children}
 
     <style jsx global>{`
-
       .container {
         width: 100vw;
         height: 100vh;
@@ -22,7 +20,9 @@ const Layout = ({ children }) => (
       .header {
         font-size: 3em;
         color: #234361;
-        font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
         font-weight: 500;
       }
 
@@ -84,11 +84,8 @@ const Layout = ({ children }) => (
           font-size: 1em;
         }
       }
-
-
-
     `}</style>
   </React.Fragment>
-)
+);
 
-export default Layout
+export default Layout;

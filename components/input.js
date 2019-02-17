@@ -1,16 +1,13 @@
-import React from 'react';
-import {TextInput, Button} from 'evergreen-ui';
+import React from "react";
+import { TextInput, Button } from "evergreen-ui";
 
+export const Input = ({ children }) => (
+  <div className="inputContainer">{children}</div>
+);
 
-const Input = ({ children }) => (
-  <div className='inputContainer'>
-    {children}
-  </div>
-)
-
-const InputField = (props) => (
+export const InputField = props => (
   <TextInput
-    className='inputField'
+    className="inputField"
     onKeyPress={props.onKeyPress}
     value={props.value}
     onChange={props.onChange}
@@ -19,21 +16,15 @@ const InputField = (props) => (
     required={props.required}
     min={props.min}
   />
-)
+);
 
-const InputButton = (props) => (
+export const InputButton = props => (
   <Button
-    style={{verticalAlign: 'baseline'}}
-    justifyContent={'center'}
+    style={{ verticalAlign: "baseline" }}
+    justifyContent={"center"}
     onClick={props.onClick}
     disabled={props.disabled}
   >
     {props.label}
   </Button>
-)
-
-export {
-  Input,
-  InputField,
-  InputButton
-}
+);
