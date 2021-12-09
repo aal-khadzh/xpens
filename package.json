@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "evergreen-ui": "^4.11.0",
-    "next": "^7.0.2",
+    "next": "^11.1.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
